@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM ubuntu:16.04
+FROM bigpangl/ubuntu:16.04
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
