@@ -165,6 +165,9 @@ RUN set -ex; \
 		"pip==$PYTHON_PIP_VERSION" \
 	; \
 	pip --version; \
+	pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/ ;\
+	pip config set global.extra-index-url https://pypi.python.org/simple; \
+	pip config set global.trusted-host mirrors.aliyun.com; \
 	\
 	find /usr/local -depth \
 		\( \
